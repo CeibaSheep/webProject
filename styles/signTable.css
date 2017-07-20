@@ -1,0 +1,36 @@
+#logTable,#registTable{
+    margin: 10px auto;
+    border: 2px solid #738398;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+#logHeader,#registHead{
+    text-align: center;
+    font-family:微软雅黑;
+    font-size: 20px;
+    margin: 15px auto;
+    padding: 2px auto;
+}
+#logContent,#registContent{
+    font-size: 16px;
+    font-family: '微软雅黑';
+    text-align: right;
+    padding: 5px 220px;
+}
+
+#logContent p,#registContent p{
+    padding: .1em auto;
+}
+#logContent .exchange,#registContent .exchange{
+    background-color: #edc;
+    padding-right: -100px;
+    float: left;
+}
+.fail{
+    border: 1px solid red;
+}
+
+
+
+
