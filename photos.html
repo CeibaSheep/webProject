@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Jay Chou</title>
+    <script type="text/javascript" src="scripts/modernizr-custom.js"></script>
+    <!--<link href="../bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">-->
+    <!--<script type="text/javascript" src="../bootstrap-3.3.7-dist/js/bootstrap.js"></script>-->
+    <link href="styles/basic.css" type="text/css" media="screen" rel="stylesheet">
+    <link href="styles/showpic.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header>
+    <img src="images/homepic.gif" alt="Jay Chou">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" >About</a></li>
+            <li><a href="photos.html" class="here">Photo</a></li>
+            <li><a href="lives.html">Lives</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<div id="deep">
+    <div id="album">
+        <img src="images/show5.jpg">
+        <img src="images/show2.jpg">
+        <img src="images/show3.jpg">
+        <img src="images/show4.jpg">
+        <img src="images/show1.jpg">
+        <img src="images/show3.jpg">
+        <img src="images/show4.jpg">
+        <img src="images/show2.jpg">
+        <div></div>
+    </div>
+</div>
+<script>
+    var pics=document.getElementById("album");
+    var imags=pics.getElementsByTagName("img");
+    var deg=Math.floor(360/imags.length);
+    for(var i=0;i<imags.length;i++){
+        imags[i].style='transform: rotateY('+deg*i+'deg) translateZ(250px)';
+    }
+    var x=0;
+    setInterval(function(){
+        pics.style.transform="rotateY("+(x++)*0.2+"deg)";
+    },10)
+
+</script>
+<script type="text/javascript" href="global.js"></script>
+</body>
+</html>
